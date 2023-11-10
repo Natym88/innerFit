@@ -1,0 +1,19 @@
+{"pages": {
+    "HIW": "Cómo funciona",
+    "Team": "Equipo",
+    "Memberships": "Membresías",
+    "Contact": "Contacto",
+    "SignIn": "Ingresar"
+},
+"home": {
+    "title": "Entrena tus Habilidades Emocionales",
+    "subtitle": "La mejor alternativa a terapia",
+    "info": "Programa de vanguardia basado en los últimos descubrimientos de la Terapia Cognitivo-Conductual y Terapia Dialectico-Comportamental."
+},
+"tryFree": "Accede 10 días gratis",
+"benefits": {
+    "benefitsTitle": "Beneficios de aprender habilidades vs ir a terapia:",
+    "list": ["Sin espera", "Skip the high-cost", "Skip the hurdles", "Skip therapy altogether", "And learn mental health skills instead."],
+    "message": "We give you the mental health skills you would learn in therapy for a fraction of its cost."
+}
+}
