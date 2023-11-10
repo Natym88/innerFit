@@ -1,6 +1,14 @@
+import { FC } from "react";
+import { Styles } from "../../../hoc/WithRoundedStyle";
 import useLanguage from "../../../hooks/useLanguage";
+import { StyledDiv } from "./styles";
+import { ChevronDown } from "react-bootstrap-icons";
 
-const LanguageButton = () => {
+interface LanguageButtonProps {
+    style?: Styles;
+}
+
+const LanguageButton: FC<LanguageButtonProps> = ({style}) => {
 
 
     const {language, toggleLanguage} = useLanguage();
@@ -16,7 +24,7 @@ const LanguageButton = () => {
         toggleLanguage();
     }
 
-    return <div onClick={onClickHandler}>{languageText}</div>
+    return <StyledDiv onClick={onClickHandler} style={style} >{languageText}<ChevronDown /></StyledDiv>
 }
 
 export default LanguageButton

@@ -1,8 +1,12 @@
-import React from 'react'
+import { Title } from './styles'
+import { getLocalizedText } from '../../../services/LanguageService'
 
 const Header = () => {
+
+  const text = getLocalizedText();
+
   return (
-    <div>Header</div>
+    <Title>{text.name}</Title>
   )
 }
 

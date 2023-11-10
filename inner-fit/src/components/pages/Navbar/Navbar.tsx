@@ -1,16 +1,30 @@
-import WithRoundedStyle from "../../../hoc/WithRoundedStyle";
+import WithRoundedStyle, { Styles } from "../../../hoc/WithRoundedStyle";
 import LanguageButton from "../../utils/LanguageButton/LanguageButton";
+import { StyledDiv } from "./styles";
 import { Menu } from "../Menu";
 
-const Navbar = () => {
+interface NavProps {
+  style?: Styles,
+  isMobile: boolean
+}
 
-const isMobile = window.matchMedia('(max-width: 768px)').matches;
+const styleProps = {
+  padding: '0'
+}
 
-    const StyledComponent = WithRoundedStyle(LanguageButton)
+const styleButtonProps = {
+  width: '48px'
+}
+
+const Navbar = ({isMobile}: NavProps) => {
+
+    const StyledButton = WithRoundedStyle(LanguageButton, styleButtonProps)
+
+    const StyledMenu = WithRoundedStyle(Menu, styleProps)
 
   return (
     <>
-    {isMobile ? <div><Menu /> <StyledComponent /></div> : <div> <StyledComponent /> <Menu /> </div>}
+    {!isMobile ? <StyledDiv mobile={isMobile}><StyledMenu /> <StyledButton /></StyledDiv> : <StyledDiv mobile={isMobile}> <StyledButton /> <Menu /> </StyledDiv>}
     </>
   )
 }

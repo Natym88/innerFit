@@ -11,7 +11,6 @@ const textsByLanguage = {
 const getLocalizedText = () => {
     const context = useLanguage();
     if(context){
-        console.log(context, textsByLanguage, textsByLanguage[context.language]);
         return textsByLanguage[context.language]
     }
     return enTexts;

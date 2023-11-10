@@ -14,17 +14,18 @@ const defaultStyles: Styles = {
     color: 'var(--text-light)',
     padding: '10px',
     width: 'fit-content',
-    borderRadius: '25%'
+    borderRadius: '100px'
 }
 
 const WithRoundedStyle = <T extends object>(Component: ComponentType<T>, customStyles?: Partial<Styles>) => {
     const WithRounded: React.FC<T> = (props) => {
-        const { backgroundColor, color, ...restDefaultStyles } = defaultStyles;
+        const { backgroundColor, color, border, ...restDefaultStyles } = defaultStyles;
         const mergedStyles = {
           ...restDefaultStyles,
           ...customStyles, // Permite pasar estilos personalizados como argumento
           backgroundColor: customStyles?.backgroundColor || backgroundColor,
           color: customStyles?.color || color,
+          border: customStyles?.border || border
         };
         return <Component {...props} style={mergedStyles} />
     }
