@@ -1,4 +1,5 @@
-import  useLanguage from '../context/LanguageContext';
+
+import useLanguage from '../hooks/useLanguage';
 import enTexts from '../locales/en.json';
 import esTexts from '../locales/es.json';
 
@@ -10,9 +11,9 @@ const textsByLanguage = {
 const getLocalizedText = () => {
     const context = useLanguage();
     if(context){
+        console.log(context, textsByLanguage, textsByLanguage[context.language]);
         return textsByLanguage[context.language]
     }
-    console.log(language, textsByLanguage, textsByLanguage[language]);
     return enTexts;
 };
 

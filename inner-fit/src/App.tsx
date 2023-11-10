@@ -7,7 +7,7 @@ function App() {
 
   return (
     <LanguageProvider>
-      <Header />
+      {/* <Header /> */}
       <Navbar />
     </LanguageProvider>
   )

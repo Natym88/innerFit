@@ -1,10 +1,12 @@
 import WithRoundedStyle from '../../../hoc/WithRoundedStyle';
-import { getLocalizedText } from '../../../services/LanguageService';
+import { getLocalizedText } from '../../../services/LanguageService.tsx';
 
-const {language} = getLocalizedText()
-console.log(language);
+const text = getLocalizedText()
 const SignIn = () => {
-    return language.pages.SignIn
+    console.log(text);
+    return <div>
+      {text.pages.SignIn}
+    </div>
 }
 
 const styleProps = {
@@ -23,10 +25,10 @@ const Menu = () => {
       {isMobile ? <div><img src='/assets/menu_hamb_claro.png' /></div> : 
       <div>
         <ul>
-            <li>{language.pages.HIW}</li>
-            <li>{language.pages.Team}</li>
-            <li>{language.pages.Memberships}</li>
-            <li>{language.pages.Contact}</li>
+            <li>{text.pages.HIW}</li>
+            <li>{text.pages.Team}</li>
+            <li>{text.pages.Memberships}</li>
+            <li>{text.pages.Contact}</li>
             <li><StiledComponent /></li>
         </ul>
       </div> }
