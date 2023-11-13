@@ -1,34 +1,33 @@
-import { FC, createContext, useState } from "react";
+import {FC, createContext, useState} from "react";
 
 export interface LanguageContextProps {
-    language: 'en' | 'es';
-    toggleLanguage: () => void;
+	language: "en" | "es";
+	toggleLanguage: () => void;
 }
 
 interface LanguageProviderProps {
-    children?: React.ReactNode;
+	children: React.ReactNode;
 }
 
-export const LanguageContext = createContext<LanguageContextProps | undefined>(undefined);
+export const LanguageContext = createContext({} as LanguageContextProps);
 
-const LanguageProvider = ({children}: LanguageProviderProps) => {
+const LanguageProvider: FC<LanguageProviderProps> = ({children}) => {
+	const [language, setLanguage] = useState<"en" | "es">("en");
 
-    const [language, setLanguage] = useState<'en' | 'es'>('en');
+	const toggleLanguage = () => {
+		setLanguage(language === "en" ? "es" : "en");
+	};
 
-    const toggleLanguage = () => {
-        setLanguage(language === 'en' ? 'es' : 'en');
-    }
+	const contextValue: LanguageContextProps = {
+		language,
+		toggleLanguage,
+	};
 
-    const contextValue: LanguageContextProps = {
-        language,
-        toggleLanguage,
-    }
-
-    return (
-        <LanguageContext.Provider value={contextValue}>
-            {children}
-        </LanguageContext.Provider>
-    )
-}
+	return (
+		<LanguageContext.Provider value={contextValue}>
+			{children}
+		</LanguageContext.Provider>
+	);
+};
 
 export default LanguageProvider;
