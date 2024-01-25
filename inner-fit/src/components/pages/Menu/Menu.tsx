@@ -27,4 +27,4 @@ const Menu = ({style}: IStyledComponents) => {
   
 }
 
-export default Menu
+export default Menu;
