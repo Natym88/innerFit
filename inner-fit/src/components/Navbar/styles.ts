@@ -7,8 +7,8 @@ interface IStyledDiv {
 export const StyledDiv = styled.div<IStyledDiv>`
     display: flex;
     justify-content: flex-end;
-    margin: 50px;
-    width: 60%;
+    margin: 50px 0;
+    width: fit-content;
 
     ${props => props.mobile && css`
     justify-content: space-between;

@@ -7,9 +7,9 @@
     "SignIn": "Ingresar"
 },
 "home": {
-    "title": "Entrena tus Habilidades Emocionales",
+    "title": "Entrena tus</br> Emociones",
     "subtitle": "La mejor alternativa a terapia",
-    "info": "Programa de vanguardia basado en los últimos descubrimientos de la Terapia Cognitivo-Conductual y Terapia Dialectico-Comportamental."
+    "info": "Programa de vanguardia basado en los últimos descubrimientos de la <span>Terapia Cognitivo-Conductual</span> y <span>Terapia Dialectico-Comportamental.</span>"
 },
 "tryFree": "Accede 10 días gratis",
 "benefits": {

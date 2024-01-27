@@ -8,6 +8,7 @@ interface IStyledList {
 export const StyledList = styled.ul<IStyledList>`
     display: flex;
     padding-left: 20px;
+    flex-direction: ${props => props.mobile && 'column'};
 `;
 
 export const StyledItem = styled.li`

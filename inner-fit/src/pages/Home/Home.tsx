@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
-import { Header } from '../Header'
-import { Navbar } from '../Navbar'
-import { StyledDiv, StyledHeader } from './styles'
-import HomeContent from './HomeContent';
+import { useState, useEffect } from "react";
+import { Header } from "../../components/Header";
+import { Navbar } from "../../components/Navbar";
+import LanguageProvider from "../../context/LanguageContext";
+import { StyledDiv, StyledHeader } from "./styles";
+import HomeContent from "../../components/Home/HomeContent";
 
 const Home = () => {
 
@@ -21,13 +22,15 @@ const Home = () => {
   }, [isMobile]); 
   
   return (
-    <StyledDiv mobile={isMobile}>
+    <LanguageProvider>
+        <StyledDiv mobile={isMobile}>
       <StyledHeader mobile={isMobile}>
         <Header />
         <Navbar isMobile={isMobile} />
       </StyledHeader>
       <HomeContent isMobile={isMobile} />
     </StyledDiv>
+    </LanguageProvider>
   )
 }
 

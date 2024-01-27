@@ -1,5 +1,5 @@
 import { Title } from './styles'
-import { getLocalizedText } from '../../../services/LanguageService'
+import { getLocalizedText } from '../../services/LanguageService'
 
 const Header = () => {
 
