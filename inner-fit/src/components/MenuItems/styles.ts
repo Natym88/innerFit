@@ -21,7 +21,7 @@ export const StyledItem = styled.li<IStyledList>`
     border-right: ${props => !props.mobile && '2px solid var(--text-light)'};
     border-bottom: ${props => props.mobile && '2px solid var(--text-light)'};
     margin: ${props => props.mobile ? '0' : 'auto 0'};
-    width: 90%;
+    width: ${props => props.mobile && '90%'};
 `;
 
 export const StyledFinalItem = styled.li<IStyledList>`
@@ -29,7 +29,7 @@ export const StyledFinalItem = styled.li<IStyledList>`
     padding: ${props => props.mobile ? '20px' : '10px 20px'};
     margin: ${props => props.mobile ? '0' : 'auto 20px auto 0'};
     border-bottom: ${props => props.mobile && '2px solid var(--text-light)'};
-    width: 90%;
+    width: ${props => props.mobile && '90%'};
 `;
 
 export const StyledSignIn = styled.li<IStyledList>`
