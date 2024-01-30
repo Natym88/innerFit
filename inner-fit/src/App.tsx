@@ -1,13 +1,17 @@
+import { Route, Routes, BrowserRouter } from 'react-router-dom'
 import './App.css'
-import { Home } from './components/pages/Home'
-import LanguageProvider from './context/LanguageContext'
+import { Home } from './pages/Home'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
 
   return (
-    <LanguageProvider>
-      <Home />
-    </LanguageProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

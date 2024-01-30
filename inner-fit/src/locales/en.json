@@ -7,9 +7,9 @@
     "SignIn": "Sign In"
 },
 "home": {
-    "title": "Mental Health Skills Training",
+    "title": "Mental Health</br> Skills Training",
     "subtitle": "The best alternative to therapy.",
-    "info": "Leading-edge program based on Cognitive Behavioural Therapy (CBT) and Dialectical Behaviour Therapy (DBT) latest findings."
+    "info": "Leading-edge program based on <span>Cognitive Behavioural Therapy (CBT)</span> and <span>Dialectical Behaviour Therapy (DBT)</span> latest findings."
 },
 "tryFree": "Try 10 days for free",
 "benefits": {

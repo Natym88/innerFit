@@ -16,4 +16,4 @@ const getLocalizedText = () => {
     return enTexts;
 };
 
-export {getLocalizedText}
+export { getLocalizedText };

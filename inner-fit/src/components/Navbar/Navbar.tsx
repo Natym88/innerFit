@@ -1,5 +1,5 @@
-import WithRoundedStyle, { Styles } from "../../../hoc/WithRoundedStyle";
-import LanguageButton from "../../utils/LanguageButton/LanguageButton";
+import WithRoundedStyle, { Styles } from "../../hoc/WithRoundedStyle";
+import LanguageButton from "../utils/LanguageButton/LanguageButton";
 import { StyledDiv } from "./styles";
 import { Menu } from "../Menu";
 
@@ -13,7 +13,8 @@ const styleProps = {
 }
 
 const styleButtonProps = {
-  width: '48px'
+  width: '48px',
+  height: '48px'
 }
 
 const Navbar = ({isMobile}: NavProps) => {
