@@ -29,11 +29,11 @@ const MenuItems = ({isMobile, text}: IProps) => {
   return (
     <div>
         <StyledList mobile={isMobile}>
-            <StyledItem>{text.pages.HIW}</StyledItem>
-            <StyledItem>{text.pages.Memberships}</StyledItem>
-            <StyledItem>{text.pages.Team}</StyledItem>
-            <StyledFinalItem>{text.pages.Contact}</StyledFinalItem>
-            <StyledSignIn><StiledComponent /></StyledSignIn>
+            <StyledItem mobile={isMobile}>{text.pages.HIW}</StyledItem>
+            <StyledItem mobile={isMobile}>{text.pages.Memberships}</StyledItem>
+            <StyledItem mobile={isMobile}>{text.pages.Team}</StyledItem>
+            <StyledFinalItem mobile={isMobile}>{text.pages.Contact}</StyledFinalItem>
+            <StyledSignIn mobile={isMobile}><StiledComponent /></StyledSignIn>
         </StyledList>
       </div>
   )
