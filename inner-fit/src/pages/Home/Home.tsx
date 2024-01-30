@@ -7,10 +7,10 @@ import HomeContent from "../../components/Home/HomeContent";
 
 const Home = () => {
 
-  const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 768px)').matches);
+  const [isMobile, setIsMobile] = useState(window.matchMedia('(max-width: 992px)').matches);
 
   const updateIsMobile = () => {
-    setIsMobile(window.matchMedia('(max-width: 768px)').matches);
+    setIsMobile(window.matchMedia('(max-width: 992px)').matches);
   };
 
   useEffect(() => {

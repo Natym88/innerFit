@@ -8,7 +8,8 @@ export const StyledMobileMenu = styled.div`
     max-width: 500px;
     background-color: var(--bg-light);
     color: var(--text-dark);
-    height: 100vh;
+    min-height: 100dvh;
+    height: 600px;
     padding: 25px;
     button {
         float: left;

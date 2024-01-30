@@ -11,7 +11,7 @@ const Menu = ({style}: IStyledComponents) => {
   const text = getLocalizedText()
   const [viewMenu, setViewMenu] = useState<boolean>(false)
 
-  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  const isMobile = window.matchMedia('(max-width: 992px)').matches;
 
   const onClickHandler = () => {
     setViewMenu(!viewMenu);

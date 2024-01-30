@@ -10,7 +10,8 @@ export const StyledDiv = styled.div<IStyledDiv>`
     background-image: url(${(props) => (props.mobile ? bgImageMobile : bgImageDesktop)});
     background-size: cover;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
+    min-height: 600px;
     text-align: ${(props) => (props.mobile && 'center')}
 `;
 
