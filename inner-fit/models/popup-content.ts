@@ -1,0 +1,1 @@
+export type PopupContentType = 'selectIssue' | 'takeTest' | 'selfTherapy' | 'findHelp'

@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "locale-selector": {
+      "message": "Elija un idioma."
+    }
+  },
+  "views": {
+    "home": {
+      "title": "¡Hola!",
+      "body": "¿Ponemos en forma tu mente?",
+      "buttons": {
+        "SelectIssue": "Selecciona un Síntoma",
+        "TakeTest": "Hacé una prueba",
+        "selfTherapy": "Auto terapia",
+        "findHelp": "Busca ayuda"
+      }
+    }
+  }
+}

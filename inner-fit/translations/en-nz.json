@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "locale-selector": {
+      "message": "Choose a language."
+    }
+  },
+  "views": {
+    "home": {
+      "title": "Kia Ora!",
+      "body": "Ready to get InnerFit?",
+      "buttons": {
+        "SelectIssue": "Select Issue",
+        "TakeTest": "Take A Test",
+        "selfTherapy": "Self-Therapy",
+        "findHelp": "Find Help"
+      }
+    }
+  }
+}
