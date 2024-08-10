@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-    i18n: {
-        localeDetection: false,
-      },
-}
+const nextConfig = {}
 
-module.exports = nextConfig;
+module.exports = nextConfig
